@@ -1,0 +1,20 @@
+@startuml
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+!define AzurePuml https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/release/2-2/dist
+!includeurl AzurePuml/AzureC4Integration.puml
+
+
+title System Landscape Diagram for RAG Document Manager
+
+Person(user, User, "A user interacting with an LLM application")
+
+System_Ext("app", "The LLM application", "An application that needs to personalize and extend its knowledge via documents")
+
+System("ragdocmanager", "RAG Document Manager", "A system that provides indexing and search capabilities for applications that leverage RAG-like architectures")
+
+Rel(user, app, "Queries")
+Rel(app, ragdocmanager, "Sends documents to store, index, and retrieve")
+
+@enduml
+

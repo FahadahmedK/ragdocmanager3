@@ -1,0 +1,84 @@
+{
+    "index_fields": [
+      {
+        "name": "document_id",
+        "field_type": "string",
+        "filterable": true,
+        "searchable": true,
+        "sortable": true,
+        "primary_key": false
+      },
+      {
+        "name": "user_id",
+        "field_type": "string",
+        "filterable": true,
+        "searchable": false,
+        "sortable": true,
+        "primary_key": false
+      },
+      {
+        "name": "updated_at",
+        "field_type": "date",
+        "filterable": true,
+        "searchable": false,
+        "sortable": true,
+        "primary_key": false
+      },
+      {
+        "name": "created_at",
+        "field_type": "date",
+        "filterable": true,
+        "searchable": false,
+        "sortable": true,
+        "primary_key": false
+      },
+      {
+        "name": "account_id",
+        "field_type": "string",
+        "filterable": true,
+        "searchable": false,
+        "sortable": true,
+        "primary_key": false
+      },
+      {
+        "name": "chunk_id",
+        "field_type": "string",
+        "filterable": true,
+        "searchable": true,
+        "sortable": true,
+        "primary_key": true
+      },
+      {
+        "name": "page",
+        "field_type": "integer",
+        "filterable": true,
+        "searchable": false,
+        "sortable": true,
+        "primary_key": false
+      },
+      {
+        "name": "content",
+        "field_type": "string",
+        "filterable": false,
+        "searchable": true,
+        "sortable": false,
+        "primary_key": false
+      },
+      {
+        "name": "session_id",
+        "field_type": "string",
+        "filterable": true,
+        "searchable": false,
+        "sortable": true,
+        "primary_key": false
+      },
+      {
+        "name": "is_global",
+        "field_type": "boolean",
+        "filterable": true,
+        "searchable": false,
+        "sortable": false,
+        "primary_key": false
+      }
+    ]
+  }
